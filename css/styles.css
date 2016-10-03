@@ -5,8 +5,20 @@
 	box-sizing: border-box;
 }
 
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
 
+p{
+  font-weight: 400;
+}
 
+h1,
+h2,
+h3,
+h4{
+  font-weight: 700;
+}
 
 /* ================================= 
   Base Layout Styles
