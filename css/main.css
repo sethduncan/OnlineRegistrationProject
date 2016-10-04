@@ -140,6 +140,26 @@ textarea:focus{
   border-color: #57bf9c;
 }
 
+input[type="checkbox"],
+input[type="radio"]{
+  display: inline-block;
+  margin-right: .5em;
+  color: #f1f1f1;
+  border-style: solid;
+  border-color: #f1f1f1;
+  height: 2em;
+  width: 2em;
+}
+
+label[for="jsbox"],
+label[for="textbutton"]{
+  margin-bottom: 2em;
+}
+
+label.box,
+label.radio{
+  display: inline-block;
+}
 
 /******************************
 placeholder 
