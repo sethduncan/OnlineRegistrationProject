@@ -27,7 +27,8 @@
         
         <div class="row">
           <label for="name">Full Name</label>      
-          <input type="text" id="name" name="user_name" placeholder="Required" required aria-required=”true”>
+          <input type="text" id="name" name="user_name" value="" placeholder="Required" required aria-required=”true” aria-describedby="name-format" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname">
+           
         </div>
         
         <div class="row">
