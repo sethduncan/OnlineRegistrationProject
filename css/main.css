@@ -71,7 +71,7 @@ header h1{
 }
 
 form{
-  max-width: 500px;
+  max-width: 650px;
   padding-left: 1em;
   padding-right: 1em;
   margin: auto;
@@ -134,7 +134,7 @@ select{
   height: 3.5em;
 }
 
-input:last-child{
+input[id="zip"]{
   width: 50%;
   margin-left: 0;
 }
@@ -159,7 +159,7 @@ input[type="radio"]{
 }
 
 label[for="jsbox"],
-label[name="plainformat"]{
+label[for="plain"]{
   margin-bottom: 2em;
 }
 
@@ -220,16 +220,61 @@ placeholder
 ==================================== */
 
 
-@media (min-width: 760px){
+@media (min-width: 1200px){
+  
   
   
   /* ---- Layout Containers ---- */
   
+  .container{
+    margin-top: 4em;
+  }
+  
+  .container h2{
+    font-size: 1.5em
+  }
   
   
   /* ---- Page Elements ---- */
 
+  hr{
+    margin-bottom: 3em;
+  }
   
+  p br{
+    display: none;
+  }
+  
+  legend{
+    font-size: 1.4em;  
+  }
+  
+  .row{
+    display: block;
+    overflow: hidden;
+  }
+  
+  .row label{
+    display: inline-block;
+    margin-top: 1em;
+  }
+  
+  .row input:not(#zip),
+  .row select{
+    display: inline-block;
+    float: right;
+    width: 80%;
+  }
+
+  input[id="zip"]{
+    width: 30%;
+    display: inline-block;
+    margin-left: 4em;
+  }
+  
+  textarea{
+    height: 7em;
+  }
   
   .clearfix::after {
     content: "";
