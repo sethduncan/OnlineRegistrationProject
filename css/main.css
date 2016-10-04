@@ -28,8 +28,13 @@ legend{
   color: #222;
 }
 
-footer{
+header,
+footer,
+.container{
   text-align: center;
+}
+
+footer{
   font-style: italic;
   margin-top: 2em;
 }
@@ -43,7 +48,6 @@ footer{
 
 header{
   width: 100%;
-  text-align: center;
   font-size: .7em;
   height: 6em;
   background: #222;
@@ -52,7 +56,6 @@ header{
 }
 
 .container{
-  text-align: center;
   border-bottom: solid 5px #57bf9c;
 }
 
@@ -65,8 +68,13 @@ header{
 
 /* ---- Page Elements ---- */
 
-header h1{
+header h1,
+label.box,
+label.radio{
   display: inline-block;
+}
+
+header h1{
   padding-top: .25em;
 }
 
@@ -74,7 +82,6 @@ form{
   max-width: 650px;
   padding-left: 1em;
   padding-right: 1em;
-  margin: auto;
 }
 
 hr{
@@ -83,8 +90,12 @@ hr{
   margin-bottom: 1.5em;
 }
 
+legend,
 .container h2{
   font-size: 1.2em;
+}
+
+.container h2{
   margin-top: 1.25em;
   margin-bottom: -.25em;
 }
@@ -95,10 +106,10 @@ hr{
 }
 
 legend{
-  font-size: 1.2em;
-  margin-bottom: 1em
+  margin-bottom: 1em;
 }
 
+form,
 label,
 input,
 select{
@@ -127,7 +138,7 @@ select {
   height: auto;
   font-size: .9em;
   padding: 1em;
-  margin-bottom: 1.5em
+  margin-bottom: 1.5em;
 }
 
 select{
@@ -142,18 +153,13 @@ input[id="zip"]{
 input:focus,
 select:focus,
 textarea:focus{ 
-  outline: none;
-  border-color: #57bf9c;
+  border: solid 3px #57bf9c;
 }
 
 input[type="checkbox"],
 input[type="radio"]{
-  cursor: pointer;
   display: inline-block;
   margin-right: .5em;
-  color: #f1f1f1;
-  border-style: solid;
-  border-color: #f1f1f1;
   height: 2em;
   width: 2em;
 }
@@ -164,9 +170,17 @@ label[for="plain"]{
 }
 
 label.box,
-label.radio{
-  display: inline-block;
+label.radio,
+input[type="checkbox"],
+input[type="radio"]{
   cursor: pointer;
+}
+
+.submit,
+input:focus,
+select:focus,
+textarea:focus{
+  outline: none;
 }
 
 .submit{
@@ -178,7 +192,6 @@ label.radio{
   font-size: 1.5em;
   padding: .75em;
   border: none;
-  outline: none;
   border-radius: 5px;
 }
 
@@ -187,6 +200,8 @@ label.radio{
   background-color: #222;
   transition-duration: .5s;
 }
+
+
 
 /******************************
 placeholder 
@@ -222,18 +237,11 @@ placeholder
 
 @media (min-width: 1200px){
   
-  
-  
   /* ---- Layout Containers ---- */
   
   .container{
     margin-top: 4em;
   }
-  
-  .container h2{
-    font-size: 1.5em
-  }
-  
   
   /* ---- Page Elements ---- */
 
@@ -245,30 +253,33 @@ placeholder
     display: none;
   }
   
+  .container h2,
   legend{
-    font-size: 1.4em;  
+    font-size: 1.5em;
   }
   
   .row{
     display: block;
     overflow: hidden;
   }
+  .row label,
+  .row input,
+  .row select{
+    display: inline-block;
+  }
   
   .row label{
-    display: inline-block;
     margin-top: 1em;
   }
   
   .row input:not(#zip),
   .row select{
-    display: inline-block;
     float: right;
     width: 80%;
   }
 
   input[id="zip"]{
     width: 30%;
-    display: inline-block;
     margin-left: 4em;
   }
   
@@ -276,10 +287,5 @@ placeholder
     height: 7em;
   }
   
-  .clearfix::after {
-    content: "";
-	display: table;
-    clear: both;
-  }
 }
 
