@@ -28,6 +28,12 @@ legend{
   color: #222;
 }
 
+footer{
+  text-align: center;
+  font-style: italic;
+  margin-top: 2em;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -159,6 +165,25 @@ label[for="textbutton"]{
 label.box,
 label.radio{
   display: inline-block;
+}
+
+.submit{
+  width: 100%;
+  color: white;
+  background-color: #57bf9c;
+  height: auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5em;
+  padding: .75em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.submit:hover{
+  color: #57bf9c;
+  background-color: #222;
+  transition-duration: .5s;
 }
 
 /******************************
